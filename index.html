@@ -152,8 +152,57 @@
 
     <div class="post-header index">
         <h1 class="title">
+            <a href="/2020/06/10/flutter%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AA%E7%8E%AF%E5%A2%83/">
+                flutter配置多个环境
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2020-06-10</span>
+            
+            
+            
+                <span class="category">
+                    <a href="/categories/app/">app</a>
+                </span>
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <p>复制一份默认的flutter环境，并修改文件夹为：flutter_dev</p>
+<p>打开终端输入：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">open .zshrc</span><br></pre></td></tr></table></figure>
+
+<p>在文本编辑里加入flutter_dev环境：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:~/Library/Android/sdk/platform-tools;</span><br><span class="line"><span class="built_in">export</span> PATH=~/Library/Android/flutter/bin:<span class="variable">$PATH</span></span><br><span class="line"><span class="built_in">export</span> PUB_HOSTED_URL=https://pub.flutter-io.cn </span><br><span class="line"><span class="built_in">export</span> FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn</span><br><span class="line"></span><br><span class="line"><span class="built_in">alias</span> flutter_dev=~/Library/Android/flutter_dev/bin/flutter</span><br></pre></td></tr></table></figure>
+
+<p>保存之后，新建Shell窗口验证默认flutter环境，输入:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flutter doctor</span><br></pre></td></tr></table></figure>
+
+<p>结果：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Doctor summary (to see all details, run flutter doctor -v):</span><br><span class="line">[✓] Flutter (Channel stable, v1.12.13+hotfix.10-pre.1, on Mac OS X 10.15.5</span><br><span class="line">    19F101, locale zh-Hans-CN)</span><br><span class="line">[✓] Android toolchain - develop <span class="keyword">for</span> Android devices (Android SDK version 29.0.3)</span><br><span class="line">[✓] Xcode - develop <span class="keyword">for</span> iOS and macOS (Xcode 11.4.1)</span><br><span class="line">[✓] Android Studio (version 4.0)</span><br><span class="line">[✓] VS Code (version 1.45.1)</span><br><span class="line">[✓] Connected device (1 available)</span><br><span class="line"></span><br><span class="line">• No issues found!</span><br></pre></td></tr></table></figure>
+
+<p>验证flutter_dev环境，输入：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flutter_dev doctor</span><br></pre></td></tr></table></figure>
+
+<p>结果:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">[✓] Flutter (Channel dev, 1.19.0-3.0.pre, on Mac OS X 10.15.5 19F101, locale</span><br><span class="line">    zh-Hans-CN)</span><br><span class="line"> </span><br><span class="line">[✓] Android toolchain - develop <span class="keyword">for</span> Android devices (Android SDK version 29.0.3)</span><br><span class="line">[✓] Xcode - develop <span class="keyword">for</span> iOS and macOS (Xcode 11.4.1)</span><br><span class="line">[✓] Chrome - develop <span class="keyword">for</span> the web</span><br><span class="line">[✓] Android Studio (version 4.0)</span><br><span class="line">[✓] VS Code (version 1.45.1)</span><br><span class="line">[✓] Connected device (4 available)</span><br><span class="line"></span><br><span class="line">• No issues found!</span><br></pre></td></tr></table></figure>
+
+
+        </div>
+    
+
+</div>
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
             <a href="/2020/06/09/Flutter%E4%B8%AD%E4%BD%BF%E7%94%A8-Future-wait-%E4%B8%80%E6%AC%A1%E6%89%A7%E8%A1%8C%E5%A4%9A%E4%B8%AA%E5%BC%82%E6%AD%A5%E6%93%8D%E4%BD%9C/">
-                Flutter中使用 Future.wait 一次执行多个异步操作
+                flutter中使用 Future.wait 一次执行多个异步操作
             </a>
         </h1>
         <div class="post-info">
@@ -172,10 +221,10 @@
     
         <div class="content">
             <p>用法：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Future.wait([</span><br><span class="line">  PackageInfoUtil.init(),</span><br><span class="line">  SharedPreferencesUtil.init(),</span><br><span class="line">]).then((e) &#123;</span><br><span class="line">  log(&quot;init:&quot;, e);</span><br><span class="line">  callback();</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Future.wait([</span><br><span class="line">  PackageInfoUtil.init(),</span><br><span class="line">  SharedPreferencesUtil.init(),</span><br><span class="line">]).then((e) &#123;</span><br><span class="line">  log(<span class="string">"init:"</span>, e);</span><br><span class="line">  callback();</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 
 <p>执行结果：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flutter: init: &#x3D;&gt; [Instance of &#39;PackageInfo&#39;, Instance of &#39;SharedPreferences&#39;]</span><br></pre></td></tr></table></figure>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flutter: init: =&gt; [Instance of <span class="string">'PackageInfo'</span>, Instance of <span class="string">'SharedPreferences'</span>]</span><br></pre></td></tr></table></figure>
         </div>
     
 
@@ -249,7 +298,11 @@
         <ul>
             
             <li>
-                <a class="footer-post" href="/2020/06/09/Flutter%E4%B8%AD%E4%BD%BF%E7%94%A8-Future-wait-%E4%B8%80%E6%AC%A1%E6%89%A7%E8%A1%8C%E5%A4%9A%E4%B8%AA%E5%BC%82%E6%AD%A5%E6%93%8D%E4%BD%9C/">Flutter中使用 Future.wait 一次</a>
+                <a class="footer-post" href="/2020/06/10/flutter%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AA%E7%8E%AF%E5%A2%83/">flutter配置多个环境</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2020/06/09/Flutter%E4%B8%AD%E4%BD%BF%E7%94%A8-Future-wait-%E4%B8%80%E6%AC%A1%E6%89%A7%E8%A1%8C%E5%A4%9A%E4%B8%AA%E5%BC%82%E6%AD%A5%E6%93%8D%E4%BD%9C/">flutter中使用 Future.wait 一次</a>
             </li>
             
             <li>
