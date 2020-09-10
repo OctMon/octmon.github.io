@@ -10,13 +10,6 @@
 
     <!--Description-->
     
-        <meta name="description" content="复制一份默认的flutter环境，并修改文件夹为：flutter_dev
-打开终端输入：
-1open .zshrc
-
-在文本编辑里加入flutter_dev环境：
-123456export PATH=$PATH:~/Library/Android/sdk/platform-tools;export ">
-    
 
     <!--Author-->
     
@@ -25,7 +18,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="flutter配置多个环境"/>
+        <meta property="og:title" content="OctMon"/>
     
 
     <!--Open Graph Description-->
@@ -36,7 +29,7 @@
 
     <!--Type page-->
     
-        <meta property="og:type" content="article" />
+        <meta property="og:type" content="website" />
     
 
     <!--Page Cover-->
@@ -50,7 +43,7 @@
 
     <!-- Title -->
     
-    <title>flutter配置多个环境 - OctMon</title>
+    <title>Archives: 2020/9 - OctMon</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
@@ -139,7 +132,9 @@
 <div class="container">
 
     <!-- Main Content -->
-    <div class="row">
+    
+
+<div class="row">
     <div class="col-sm-12">
 
         <!--Title and Logo-->
@@ -147,78 +142,61 @@
     <div class="logo">
         <a href="/"><i class="logo-icon fa fa-cube" aria-hidden="true"></i></a>
         
+            <h1 id="main-title" class="title">2020/9</h1>
+        
     </div>
 </header>
 
-        <section class="main">
+        <section class="main archive-container">
             
-<div class="post">
-
-    <div class="post-header">
-        <h1 class="title">
-            <a href="/2020/06/10/flutter%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AA%E7%8E%AF%E5%A2%83/">
-                flutter配置多个环境
-            </a>
-        </h1>
-        <div class="post-info">
-            
-                <span class="date">2020-06-10</span>
-            
-            
-            
-                <span class="category">
-                    <a href="/categories/app/">app</a>
-                </span>
-            
-        </div>
-    </div>
-
-    <div class="content">
-
-        <!-- Gallery -->
-        
-
-        <!-- Post Content -->
-        <p>复制一份默认的flutter环境，并修改文件夹为：flutter_dev</p>
-<p>打开终端输入：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">open .zshrc</span><br></pre></td></tr></table></figure>
-
-<p>在文本编辑里加入flutter_dev环境：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:~/Library/Android/sdk/platform-tools;</span><br><span class="line"><span class="built_in">export</span> PATH=~/Library/Android/flutter/bin:<span class="variable">$PATH</span></span><br><span class="line"><span class="built_in">export</span> PUB_HOSTED_URL=https://pub.flutter-io.cn </span><br><span class="line"><span class="built_in">export</span> FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn</span><br><span class="line"></span><br><span class="line"><span class="built_in">alias</span> flutter_dev=~/Library/Android/flutter_dev/bin/flutter</span><br></pre></td></tr></table></figure>
-
-<p>保存之后，新建Shell窗口验证默认flutter环境，输入:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flutter doctor</span><br></pre></td></tr></table></figure>
-
-<p>结果：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Doctor summary (to see all details, run flutter doctor -v):</span><br><span class="line">[✓] Flutter (Channel stable, v1.12.13+hotfix.10-pre.1, on Mac OS X 10.15.5</span><br><span class="line">    19F101, locale zh-Hans-CN)</span><br><span class="line">[✓] Android toolchain - develop <span class="keyword">for</span> Android devices (Android SDK version 29.0.3)</span><br><span class="line">[✓] Xcode - develop <span class="keyword">for</span> iOS and macOS (Xcode 11.4.1)</span><br><span class="line">[✓] Android Studio (version 4.0)</span><br><span class="line">[✓] VS Code (version 1.45.1)</span><br><span class="line">[✓] Connected device (1 available)</span><br><span class="line"></span><br><span class="line">• No issues found!</span><br></pre></td></tr></table></figure>
-
-<p>验证flutter_dev环境，输入：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flutter_dev doctor</span><br></pre></td></tr></table></figure>
-
-<p>结果:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">[✓] Flutter (Channel dev, 1.19.0-3.0.pre, on Mac OS X 10.15.5 19F101, locale</span><br><span class="line">    zh-Hans-CN)</span><br><span class="line"> </span><br><span class="line">[✓] Android toolchain - develop <span class="keyword">for</span> Android devices (Android SDK version 29.0.3)</span><br><span class="line">[✓] Xcode - develop <span class="keyword">for</span> iOS and macOS (Xcode 11.4.1)</span><br><span class="line">[✓] Chrome - develop <span class="keyword">for</span> the web</span><br><span class="line">[✓] Android Studio (version 4.0)</span><br><span class="line">[✓] VS Code (version 1.45.1)</span><br><span class="line">[✓] Connected device (4 available)</span><br><span class="line"></span><br><span class="line">• No issues found!</span><br></pre></td></tr></table></figure>
-
-
-    </div>
-
-    
-
-    
-        <div class="post-tags">
-            <i class="fa fa-tags" aria-hidden="true"></i>
-            <a href="/tags/flutter/">#flutter</a>
-        </div>
-    
-
-    <!-- Comments -->
-    
-
+                <div class="archive-post">
+    <a href="/2020/06/09/Flutter%E4%B8%AD%E4%BD%BF%E7%94%A8-Future-wait-%E4%B8%80%E6%AC%A1%E6%89%A7%E8%A1%8C%E5%A4%9A%E4%B8%AA%E5%BC%82%E6%AD%A5%E6%93%8D%E4%BD%9C/">
+        <span class="archive-date">
+            Jun 2020
+        </span>
+        flutter中使用 Future.wait 一次执行多个异步操作
+    </a>
 </div>
+            
+                <div class="archive-post">
+    <a href="/2020/06/22/flutter%E4%B8%80%E9%94%AE%E6%89%93%E5%8C%85ipa%E3%80%81apk%E5%AE%89%E8%A3%85%E5%8C%85/">
+        <span class="archive-date">
+            Jun 2020
+        </span>
+        flutter一键打包ipa、apk安装包 上传蒲公英
+    </a>
+</div>
+            
+                <div class="archive-post">
+    <a href="/2020/06/10/flutter%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AA%E7%8E%AF%E5%A2%83/">
+        <span class="archive-date">
+            Jun 2020
+        </span>
+        flutter配置多个环境
+    </a>
+</div>
+            
+                <div class="archive-post">
+    <a href="/2020/06/08/hello-world/">
+        <span class="archive-date">
+            Jun 2020
+        </span>
+        Hello World
+    </a>
+</div>
+            
+                <div class="archive-post">
+    <a href="/2020/09/10/%E5%86%85%E8%B4%AD%E4%B8%AD%E6%96%AD%E6%AD%A4%E6%B5%8B%E8%AF%95%E5%91%98%E7%9A%84%E8%B4%AD%E4%B9%B0%E6%B5%81%E7%A8%8B/">
+        <span class="archive-date">
+            Sep 2020
+        </span>
+        内购中断此测试员的购买流程
+    </a>
+</div>
+            
         </section>
-
     </div>
 </div>
-
 
 </div>
 
